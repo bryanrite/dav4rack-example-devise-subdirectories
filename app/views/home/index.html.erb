@@ -1,0 +1,9 @@
+<h1>DAV4Rack Example Application</h1>
+<% if user_signed_in? %>
+  <p>Signed in as <%= current_user.username %></p>
+  <p><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></p>
+<% else %>
+  <p><%= link_to 'Login', new_user_session_path %></p>
+  <p><%= link_to 'Create Account', new_user_registration_path %></p>
+<% end %>
+
