@@ -22,4 +22,4 @@ A brief walkthough is available: <https://github.com/chrisroberts/dav4rack/wiki/
 
 Question or comments can be posted on github: <https://github.com/bryanrite/dav4rack-example-devise-subdirectories>
 
-Version: 1.0.0
+Version: 1.0.1
