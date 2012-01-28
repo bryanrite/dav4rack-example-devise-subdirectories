@@ -22,7 +22,7 @@ This creates a user account using a pretty vanilla install of Devise (with the e
 
 For each account you create, a folder will be created automatically in **Rails.root/public/system/userfiles**, this is where we will store the per-user subdirectories they will access over WebDAV.
 
-#### Connectingn with WebDAV
+#### Connecting with WebDAV
 
 If you have created an account, you should be able to connect to it via WebDAV.
 
