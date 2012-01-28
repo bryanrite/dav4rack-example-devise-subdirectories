@@ -17,3 +17,5 @@ You should now have per-user chrooted WebDAV folders authenticated with Devise!
 A brief walkthough is available: <https://github.com/chrisroberts/dav4rack/wiki/Advanced-Rails-3-Tutorial---Custom-Resource,-Devise,-and-User-Specific-Routing>
 
 Question or comments can be posted on github: <https://github.com/bryanrite/dav4rack-example-devise-subdirectories>
+
+Version: 1.0.0
