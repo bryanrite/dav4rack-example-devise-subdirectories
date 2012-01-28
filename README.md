@@ -38,4 +38,4 @@ There is a step-by-step walkthough available: <https://github.com/chrisroberts/d
 
 Question or comments can be posted on github: <https://github.com/bryanrite/dav4rack-example-devise-subdirectories>
 
-Version: 1.0.1
+Version: 1.0.2
