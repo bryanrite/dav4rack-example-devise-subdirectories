@@ -2,24 +2,40 @@
 
 If you don't know what DAV4Rack is, check out the gem by Chris Roberts: <https://github.com/chrisroberts/dav4rack/> 
 
-### How does this work?
+### Walkthrough
 
-Clone the repo off Github, run `bundle install && rake db:migrate && rails s`
+#### Set It Up Locally
 
-With a web browser, goto `localhost:3000` (its just a regular rails app)
+Clone the repo off Github and run `bundle install && rake db:migrate && rails s`
 
-Create an account (or many) using the link above. This creates a user account using a pretty vanilla install of Devise. For each account you create, a folder will be created automatically in **/Users/brite/src/example/public/system/userfiles**
+It will start up like a regular rails application.
 
-You can then connect to this folder with WebDAV at: **webdav.lvh.me:3000**
+With a web browser, goto `localhost:3000` and you should see the welcome page!
 
-*(if you don't know what *.lvh.me is, its just a CNAME to localhost, makes working with subdomains on your local machine easier)*
+#### Setting Up User Accounts
 
-You should now have per-user chrooted WebDAV folders authenticated with Devise!
+The Welcome Page has links to Login and Sign Up.  These are simple links provided by Devise.
+
+Create an account (or many) using the Create Account link. 
+
+This creates a user account using a pretty vanilla install of Devise (with the exception of using usernames instead of email). 
+
+For each account you create, a folder will be created automatically in **Rails.root/public/system/userfiles**, this is where we will store the per-user subdirectories they will access over WebDAV.
+
+#### Connectingn with WebDAV
+
+If you have created an account, you should be able to connect to it via WebDAV.
+
+Boot up your WebDAV client (Apple Finder, Cyberduck, Cadaver, etc.) and visit: <webdav.lvh.me:3000>
+
+Ff you don't know what *.lvh.me is, its just a CNAME to localhost, makes working with subdomains on your local machine easier.  In this example we've constrained WebDAV to only work on the webdav subdomain, but you can change this in `routes.rb` if you desire.
+
+Enter the username and password for a user account you have previously registered and you should get a chrooted DAV folder!
 
 ### More help?
 
-A brief walkthough is available: <https://github.com/chrisroberts/dav4rack/wiki/Advanced-Rails-3-Tutorial---Custom-Resource,-Devise,-and-User-Specific-Routing>
+There is a step-by-step walkthough available: <https://github.com/chrisroberts/dav4rack/wiki/Advanced-Rails-3-Tutorial---Custom-Resource,-Devise,-and-User-Specific-Routing>
 
 Question or comments can be posted on github: <https://github.com/bryanrite/dav4rack-example-devise-subdirectories>
 
-Version: 1.0.1
+Version: 1.0.2
