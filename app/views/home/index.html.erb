@@ -7,18 +7,7 @@
   <p><%= link_to 'Create Account', new_user_registration_path %></p>
 <% end %>
 
-<h2>Welcome to the DAV4Rack Rails Example using Devise and Per-User Subdomains!</h2>
-<p>If you don't know what DAV4Rack is, check out the gem by Chris Roberts: <%= link_to 'https://github.com/chrisroberts/dav4rack/', 'https://github.com/chrisroberts/dav4rack/' %>
-<h3>How does this work?</h3>
-<p>Simply create an account (or many) using the link above.  For each account you create, a folder will be created in <strong><%= File.join(Rails.root, 'public', 'system', 'userfiles') %></strong></p>
-<p>You can then connect to this folder with WebDAV at: <strong>webdav.lvh.me:3000</strong></p>
-<p><em>(if you don't know what *.lvh.me is, its just a CNAME to localhost, makes working with subdomains on your local machine easier)</em></p>
+<h2>Welcome to the DAV4Rack Rails Sample Application using Devise and Per-User Subdirectories!</h2>
 
-<p>You should now have per-user chrooted WebDAV folders authenticated with Devise!</p>
-
-<h3>More help?</h3>
-<p>A brief walkthough is available <%= link_to 'here', 'https://github.com/chrisroberts/dav4rack/wiki/Advanced-Rails-3-Tutorial---Custom-Resource,-Devise,-and-User-Specific-Routing' %></p>
-
-<p>Question or comments can be posted: <%= link_to 'on github.', 'https://github.com/bryanrite/dav4rack-example-devise-subdirectories' %></p>
-
-<p><em>-<%= link_to 'Bryan Rite', 'http://www.bryanrite.com' %></em></p>
+<p>The <%= link_to 'README file', 'https://github.com/bryanrite/dav4rack-example-devise-subdirectories/blob/master/README.md' %> has the most up-to-date instructions on how to get this sample app running and what it can do.</p>
+  
