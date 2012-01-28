@@ -28,7 +28,7 @@ If you have created an account, you should be able to connect to it via WebDAV.
 
 Boot up your WebDAV client (Apple Finder, Cyberduck, Cadaver, etc.) and visit: <webdav.lvh.me:3000>
 
-Ff you don't know what *.lvh.me is, its just a CNAME to localhost, makes working with subdomains on your local machine easier.  In this example we've constrained WebDAV to only work on the webdav subdomain, but you can change this in `routes.rb` if you desire.
+If you don't know what *.lvh.me is, its just a CNAME to localhost, makes working with subdomains on your local machine easier.  In this example we've constrained WebDAV to only work on the webdav subdomain, but you can change this in `routes.rb` if you desire.
 
 Enter the username and password for a user account you have previously registered and you should get a chrooted DAV folder!
 
