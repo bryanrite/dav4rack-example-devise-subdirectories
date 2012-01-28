@@ -1,0 +1,1 @@
+require 'dav4rack/file_resource'

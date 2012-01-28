@@ -9,7 +9,7 @@ class User < ActiveRecord::Base
   
   after_create :create_userfile_directory
   
-  validates :username, presence: true
+  validates :username, presence: true, uniqueness: true
   
   def create_userfile_directory
     FileUtils.mkdir(File.join(Rails.root, 'public', 'system', 'userfiles', id.to_s))
